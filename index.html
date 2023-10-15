@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="w3-text-white">
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="game.css">
+  </head>
+  <body>
+
+    <div class="title w3-center">
+      <h1>Rock Paper Scissors</h1>
+      <h3>~ GAME ~</h3>
+    </div>
+
+    <div class="mechanics w3-center w3-card">
+      <p class="w3-xlarge">Game Mechanics:</p>
+      <br>
+      <br>
+      <br>
+
+      <p class="rules w3-center w3-padding-32">
+        <img src="images/paper.png" class="move-icon w3-circle">beats
+        <img src="images/rock.png" class="move-icon w3-circle">beats
+        <img src="images/scissors.png" class="move-icon w3-circle">beats
+        <img src="images/paper.png" class="move-icon w3-circle">
+      </p>
+      <br>
+      <br>
+      <br>
+
+      <p class="w3-center">
+        <span class="w3-large">The Player</span>
+        <img src="images/you.png" class="move-icon w3-circle"> 
+        <span class="w3-xlarge">VS</span>
+        <img src="images/computer.png" class="move-icon w3-circle">
+        <span class="w3-large">The Computer</span>
+      </p>
+      <br>
+      <br>
+
+      <p>The goal is to win at least 10 times against the computer before the number of losses and ties reaches 10 times in the scoreboard first.</p>
+
+    </div>
+    
+    <div class="container w3-center w3-border">
+      <p class="w3-xlarge">Pick a Move.</p>
+        <br>
+
+        <button class="move-button js-rock-button w3-circle w3-margin">
+          <img src="images/rock.png" class="move-icon w3-circle">
+        </button>
+
+        <button class="move-button js-paper-button w3-circle w3-margin">
+          <img src="images/paper.png" class="move-icon w3-circle">
+        </button>
+
+        <button class="move-button js-scissors-button w3-circle w3-margin">
+          <img src="images/scissors.png" class="move-icon w3-circle">
+        </button>
+
+        <br>
+
+        <p class="js-result result" style="margin-top: 50px;"></p>
+        <p class="js-moves" style="margin-top: 50px;"></p>
+        <p class="js-score score" style="margin-top: 50px;"></p>
+
+        <br>
+
+        <button onclick="
+          score.wins = 0;
+          score.losses = 0;
+          score.ties = 0;
+          localStorage.removeItem('score');
+          updateScoreElement();
+        " class="reset-button js-reset-score-button">Reset Score</button>
+
+        <!--
+        <button class="auto-play-button" onclick="
+          autoPlay();
+        ">Auto Play</button>
+        -->
+
+    </div>
+
+    <div class="footer w3-center w3-card">
+      <p class="w3-xlarge">Thanks for playing!!</p>
+    </div>
+    
+    <script src="game.js"></script>
+  </body>
+</html>

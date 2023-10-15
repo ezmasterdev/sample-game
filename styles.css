@@ -1,0 +1,84 @@
+html {
+    background-color: rgb(11, 1, 37);
+}
+
+
+
+.title {
+    margin-top: 10%;
+}
+
+.mechanics {
+    background-color: black;
+    border-top: solid 2.5px white;
+    border-bottom: solid 2.5px white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10%;
+}
+
+.rules {
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.container {
+    background-color: rgb(21, 6, 59);
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding: 10%;
+}
+
+.move-button {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.move-button:hover {
+    opacity: 0.8;
+}
+
+.move-button:active {
+    opacity: 0.5;
+    border-width: 5px;
+    border: none;
+}
+
+.move-icon {
+    border: 5px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.player-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.reset-button {
+    padding: 1.5%;
+    border-color: goldenrod;
+    border-width: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    opacity: 0.8;
+}
+
+.reset-button:active {
+    opacity: 0.5;
+}
+
+.footer {
+    background-color: black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10%;
+}

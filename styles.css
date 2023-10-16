@@ -53,6 +53,10 @@ html {
     width: 100px;
 }
 
+.move-icon-margin {
+    margin: 2.5%;
+}
+
 .player-icon {
     height: 100px;
     width: 100px;

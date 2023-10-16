@@ -3,7 +3,7 @@
   <head>
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game.css">
   </head>
   <body>
 
@@ -15,20 +15,20 @@
     <div class="mechanics w3-center w3-card">
       <p class="w3-xlarge">Game Mechanics:</p>
       <br>
-      <br>
+      <br>  
       <br>
 
       <div class="rules w3-center w3-padding-32">
         <p>
-          <img src="images/paper.png" class="move-icon w3-circle">beats
+          <img src="images/paper.png" class="move-icon w3-circle">&nbsp; beats &nbsp;
           <img src="images/rock.png" class="move-icon w3-circle">
         </p>
         <p>
-          <img src="images/rock.png" class="move-icon w3-circle">beats
+          <img src="images/rock.png" class="move-icon w3-circle">&nbsp; beats &nbsp;
           <img src="images/scissors.png" class="move-icon w3-circle">
         </p>
         <p>
-          <img src="images/scissors.png" class="move-icon w3-circle">beats
+          <img src="images/scissors.png" class="move-icon w3-circle">&nbsp; beats &nbsp;
           <img src="images/paper.png" class="move-icon w3-circle">
         </p>
       </div>
@@ -38,19 +38,22 @@
 
       <p class="w3-center">
         <span class="w3-large">The Player</span>
-        <img src="images/you.png" class="move-icon w3-circle"> 
-        <span class="w3-xlarge">VS</span>
-        <img src="images/computer.png" class="move-icon w3-circle">
-        <span class="w3-large">The Computer</span>
+        <img src="images/you.png" class="move-icon move-icon-margin w3-circle"> 
+        <span class="w3-xlarge"> VS </span>
+        <img src="images/computer.png" class="move-icon move-icon-margin w3-circle">
+        <span class="w3-large">Computer</span>
       </p>
       <br>
       <br>
 
-      <p>The goal is to win at least 10 times against the computer before the number of losses and ties reaches 10 times in the scoreboard first.</p>
+      <p>The goal is to win at least 10 times against the computer before your number of losses and ties reaches 10 times first in the scoreboard.</p>
 
     </div>
     
+    <h1 class="w3-center">Play Game</h1>
+
     <div class="container w3-center w3-border">
+      <br>
       <p class="w3-xlarge">Pick a Move.</p>
         <br>
 
@@ -94,6 +97,6 @@
       <p class="w3-xlarge">Thanks for playing!!</p>
     </div>
     
-    <script src="script.js"></script>
+    <script src="game.js"></script>
   </body>
 </html>
